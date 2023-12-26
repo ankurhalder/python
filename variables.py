@@ -10,3 +10,4 @@ x =20
 print(x)
 del x
 print(x)
+print("jajajaja")
