@@ -1,0 +1,4 @@
+This is a new file created using Python!
+This is another line.
+This is a list of strings.
+This is another string.
