@@ -1,5 +1,3 @@
-# Slice Cheat Sheet in Python
-
 # Syntax:
 # slice(start, stop, step)
 
