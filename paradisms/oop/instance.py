@@ -1,6 +1,5 @@
-
-# Define a class named 'payslips'
-class payslips:
+# Define a class named 'Payslip'
+class Payslip:
     # Constructor method to initialize instance variables
     def __init__(self, name, payment_status, amount) -> None:
         self.name = name
@@ -33,22 +32,24 @@ class payslips:
         """Display information about the payslip."""
         return f"{self.name}'s payslip - Amount: ${self.amount}, Payment Status: {self.payment_status}"
 
-# Create instances of the 'payslips' class
-nathan = payslips("Nathan", "no", 1000)
-roger = payslips("Roger", "no", 2000)
+# Create instances of the 'Payslip' class
+nathan = Payslip("Nathan", "no", 1000)
+roger = Payslip("Roger", "no", 2000)
 
 # Display the initial payslip information
+print("Initial Payslip Information:")
 print(nathan.display_payslip_info())
 print(roger.display_payslip_info())
 
-# Update the payment status for 'nathan' instance
+# Update the payment status for 'Nathan' instance
 nathan.mark_as_paid()
 
-# Display payslip information after updating for 'nathan' instance
-print("After payment: \n", nathan.display_payslip_info())
+# Display payslip information after updating for 'Nathan' instance
+print("\nAfter Payment for Nathan:")
+print(nathan.display_payslip_info())
 print(roger.display_payslip_info())
 
-# Calculate total payment for 'roger' with a bonus
+# Calculate total payment for 'Roger' with a bonus
 roger_bonus = 500
 total_payment_roger = roger.calculate_total_payment(bonus=roger_bonus)
-print(f"Total payment for Roger (with bonus): ${total_payment_roger}")
+print(f"\nTotal payment for Roger (with bonus): ${total_payment_roger}")

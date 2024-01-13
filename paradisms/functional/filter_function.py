@@ -1,4 +1,3 @@
-# Syntax:
 # filter(function, iterable)
 
 # Parameters:
