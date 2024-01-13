@@ -1,4 +1,3 @@
-# Class Definition
 class MyClass:
     # Class Variable
     class_variable = 10
