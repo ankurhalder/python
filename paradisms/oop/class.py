@@ -14,3 +14,14 @@ print(myc.a)
 
 # Invoking an Instance Method
 myc.hello()
+
+
+# A good example of a class variable is a constant:
+value = 7
+class A:
+    value = 5
+a = A()
+a.value = 3
+print(value) # 7
+print(a.value) # 3
+print(A.value) # 5
